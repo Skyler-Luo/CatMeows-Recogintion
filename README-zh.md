@@ -27,44 +27,6 @@
 | **UnfamiliarSurroundings** | 猫咪在陌生环境中的叫声 |
 | **WaitForFood** | 猫咪等待食物时的叫声 |
 
-## 🖼️ 可视化展示
-
-### 频谱图对比
-<p align="center">
-  <img src="img/spectrogram_comparison.png" alt="频谱图对比" width="80%">
-</p>
-<p align="center"><i>不同猫叫声类别的频谱图对比</i></p>
-
-### t-SNE 特征可视化
-<p align="center">
-  <img src="img/tsne.png" alt="t-SNE可视化" width="60%">
-</p>
-<p align="center"><i>t-SNE可视化展示各类别的特征聚类效果</i></p>
-
-### SVM 决策边界
-<p align="center">
-  <img src="img/svm_decision_boundary.png" alt="SVM决策边界" width="60%">
-</p>
-<p align="center"><i>在PCA降维后的2D空间中可视化SVM决策边界</i></p>
-
-### 混淆矩阵
-<p align="center">
-  <img src="img/confusion_matrix.png" alt="混淆矩阵" width="50%">
-</p>
-<p align="center"><i>展示分类性能的混淆矩阵</i></p>
-
-### ROC 曲线
-<p align="center">
-  <img src="img/roc_curve.png" alt="ROC曲线" width="60%">
-</p>
-<p align="center"><i>各类别的ROC曲线（一对多策略）</i></p>
-
-### 精确率-召回率曲线
-<p align="center">
-  <img src="img/pr_curve.png" alt="PR曲线" width="60%">
-</p>
-<p align="center"><i>各类别的精确率-召回率曲线</i></p>
-
 ## 🚀 快速开始
 
 ### 环境要求
@@ -139,10 +101,10 @@ CatMeows-Recognition/
 | `fmax` | 4000 Hz | 最高频率 |
 
 **特征组成：**
-- ✅ MFCC系数（20个）
-- ✅ 一阶差分系数（Delta）
-- ✅ 二阶差分系数（Delta-Delta）
-- 📊 统计池化：均值、标准差、最小值、最大值
+- MFCC系数（20个）
+- 一阶差分系数（Delta）
+- 二阶差分系数（Delta-Delta）
+- 统计池化：均值、标准差、最小值、最大值
 
 **总特征维度：** 20 × 3 (MFCC + Δ + ΔΔ) × 4 (统计量) = **240维特征**
 
@@ -156,11 +118,49 @@ CatMeows-Recognition/
 
 ### 评估指标
 
-- 🎯 **准确率 (Accuracy)**：整体分类准确率
-- 📈 **F1分数**：宏平均和加权F1分数
-- 📊 **精确率/召回率**：各类别及宏平均
-- 📉 **AUC-ROC**：ROC曲线下面积（一对多策略）
-- 🔢 **混淆矩阵**：详细的分类结果分布
+- 准确率 (Accuracy)：整体分类准确率
+- F1分数：宏平均和加权F1分数
+- 精确率/召回率：各类别及宏平均
+- AUC-ROC：ROC曲线下面积（一对多策略）
+- 混淆矩阵：详细的分类结果分布
+
+## 🖼️ 可视化展示
+
+### 频谱图对比
+<p align="center">
+  <img src="img/spectrogram_comparison.png" alt="频谱图对比" width="80%">
+</p>
+<p align="center"><i>不同猫叫声类别的频谱图对比</i></p>
+
+### t-SNE 特征可视化
+<p align="center">
+  <img src="img/tsne.png" alt="t-SNE可视化" width="60%">
+</p>
+<p align="center"><i>t-SNE可视化展示各类别的特征聚类效果</i></p>
+
+### SVM 决策边界
+<p align="center">
+  <img src="img/svm_decision_boundary.png" alt="SVM决策边界" width="60%">
+</p>
+<p align="center"><i>在PCA降维后的2D空间中可视化SVM决策边界</i></p>
+
+### 混淆矩阵
+<p align="center">
+  <img src="img/confusion_matrix.png" alt="混淆矩阵" width="50%">
+</p>
+<p align="center"><i>展示分类性能的混淆矩阵</i></p>
+
+### ROC 曲线
+<p align="center">
+  <img src="img/roc_curve.png" alt="ROC曲线" width="60%">
+</p>
+<p align="center"><i>各类别的ROC曲线（一对多策略）</i></p>
+
+### 精确率-召回率曲线
+<p align="center">
+  <img src="img/pr_curve.png" alt="PR曲线" width="60%">
+</p>
+<p align="center"><i>各类别的精确率-召回率曲线</i></p>
 
 ## 📄 许可证
 
@@ -169,5 +169,5 @@ CatMeows-Recognition/
 ---
 
 <p align="center">
-  用 ❤️ 为猫咪 🐱 制作
+  ⭐ 如果这个项目对你有帮助，请点个 Star 支持一下！ ⭐
 </p>
